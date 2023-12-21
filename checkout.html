@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Checkout</title>
+
+		<!-- ICON LINK -->
+	<link rel="icon" type="text/css" href="img/favicon.png">
+
+		<!-- CSS PAGE JOINT LINK -->
+	<link rel="stylesheet" type="text/css" href="akki.css">
+
+		<!-- FAFA ICON LINK -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!--  FONT LINK ONE  ( Open Sans-Serif) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+			<!-- style="font-family: 'Open Sans', sans-serif;" -->
+
+		<!-- FONT LINK TWO (Roboto) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+			<!-- style="font-family: 'Roboto', sans-serif;" -->
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader">
+	<div class="center-body">
+		<div class="loader-circle-29"></div>
+
+	</div>
+</div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<form>
+
+
+										<!-- Header 1 -->
+
+<div style="height: 300px;width:100%;background-color: transparent;">
+	<div class="blackheader">
+		<div class="subheader">
+			
+			<i class="fa fa-clock-o ml150 mt10 textclrwhite fontsize14" aria-hidden="true">
+			</i>
+			<span style="font-size: 14px;color: white;">2023-09-11</span>
+			
+			
+			<i class="fa fa-cloud ml10 textclrwhite fontsize16" aria-hidden="true"></i>
+			<span style="font-size: 14px;color: white;">Bapunagar,Ahmedabad</span>	
+			
+		</div>
+
+		<div class="subheader">
+			<i class="fa fa-facebook mt10 textclrwhite fontsize14" aria-hidden="true" style="margin-left: 550px;cursor: pointer;"></i>
+			<i class="fa fa-twitter ml10 mt10 textclrwhite fontsize14" aria-hidden="true" style="cursor: pointer;"></i>
+			<i class="fa fa-instagram ml10 mt10 textclrwhite fontsize14" aria-hidden="true" style="cursor: pointer;"></i>
+		</div>
+	</div>
+
+											<!-- Header 2  White Div -->
+
+	<div style="height: 85px;width: 100%;">
+		<div class="bgw divhw" style="width: 30%;">
+			<img src="img/logo1.png" class="ml150 mt10" style="height: 60px;width: 200px;cursor:pointer;">
+		</div>
+		<div class="bgw divhw" style="width: 70%;">
+			<a href="index.html"><span class="ml60 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>HOME</b></span></a>
+			<a href="blog.html"><span class="ml20 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>BLOG</b></span></a>
+			<a href="shoplist.html"><span class="ml20 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>SHOP LIST</b></span></a>
+			<a href="account.html"><span class="ml20 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>ACCOUNT</b></span></a>
+			<a href="cart.html"><span class="ml30 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>CART</b></span></a>
+			<a href="checkout.html" style="color: red;"><span class="ml30 mt40 fontsize15" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>CHECKOUT</b></span></a>
+			<a href="detail.html"><span class="ml30 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>DETAIL</b></span></a>
+			<a href="aboutus.html"><span class="ml30 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>ABOUT US</b></span></a>
+			<a href="contactus.html"><span class="ml30 mt40 fontsize15 clickred" style="font-family: 'Open Sans', sans-serif;cursor: pointer;"><b>CONTECT US</b></span></a>
+			<i class="fa fa-search ml20 mt40 fontsize14  clickred" aria-hidden="true"></i>
+		</div>
+	</div>
+
+
+	<div style="height: 100px;width: 100%;background-color: #303e4b;">
+		<div style="height: 45px;width: 20%;background-color:white;float: left;box-shadow: 1px 1px 1px black;margin: 75px 0px 0px 590px;">
+			<span class="font-size20 mt10 ml55 pointer clickred float" style="font-family: 'Open Sans', sans-serif;"><b>Home</b></span>
+			&nbsp;
+			<span class="float" style="margin: 12px 0px 0px 10px">|</span>&nbsp;
+			<span class="font-size20 mt10 ml10 pointer clickred float" style="font-family: 'Open Sans', sans-serif;"><b>Shop</b></span>&nbsp;
+			<span class="float" style="margin: 12px 0px 0px 10px">|</span>&nbsp;
+			<span class="font-size20 mt10 ml10 pointer float" style="font-family: 'Open Sans', sans-serif;color: red;"><b>Checkout</b></span>
+		</div>
+	</div>
+</div>
+
+
+										<!--	 	Main Div Start	( have a Coupon? )	 -->
+
+
+
+		<div class="height100 width78 bgw mt0 ml160" style="border: 1px solid black;">
+			<span class="fontsize16 mt40 ml30 float" style="font-family: 'Open Sans', sans-serif;">Have a coupon?</span>
+			<span class="fontsize16 mt40 ml780 float pointer" style="font-family: 'Open Sans', sans-serif;color: red;">Click here to enter your code</span>
+		</div>
+
+
+												<!-- 	Billing Details 	-->
+
+
+
+		<p class="fontsize21 mt30 ml160"  style="font-family: 'Roboto', sans-serif;">Billing Details</p>
+			<hr class="width78 mt0 ml160">
+
+
+								<!-- Left Side Div Start ( First name  To  Postcode ) -->
+
+
+		<div style="height:480px;width: 100%;background-color: white;">
+			<div style="height:480px;width: 50%;background-color: transparent;float: left;">
+				<span style="font-family: 'Open Sans', sans-serif;margin:10px 0px 0px 160px;float: left;" class="pointer1">First Name:*</span>
+				<span style="font-family: 'Open Sans', sans-serif;margin: 10px 0px 0px 205px;float: left;" class="pointer1">Last Name:*</span>
+				<input type="text" class="inputtypered" style="height: 40px;width: 33%;margin: 10px 0px 0px 160px;float: left;"> 
+				<input type="text" class="inputtypered" style="height: 40px;width: 33%;margin: 10px 0px 0px 40px;float: left;"> 
+
+				<span style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 160px;float: left;" class="pointer1">Company Name (Optional):</span>
+				<input type="text" class="inputtypered" style="width: 72%;margin: 10px 0px 0px 160px;">
+
+				<span style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 160px;float: left;" class="pointer1">Country:*</span>
+				<select style="height: 40px;width: 73%;margin: 15px 0px 0px 160px;float: left;">
+					<option>INDIA</option>
+					<option>USA</option>
+					<option>CANADA</option>
+					<option>CHAINA</option>
+					<option>KORIA</option>
+				</select>
+
+				<span style="font-family: 'Open Sans', sans-serif;margin:15px 0px 0px 160px;float: left;" class="pointer1">Street Address:*</span>
+				<span style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 175px;float: left;" class="pointer1">Town/City:*</span>
+				<input type="text" class="inputtypered" style="height: 40px;width: 33%;margin: 10px 0px 0px 160px;float: left;"> 
+				<input type="text" class="inputtypered" style="height: 40px;width: 33%;margin: 10px 0px 0px 40px;float: left;"> 
+
+				<span style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 160px;float: left;" class="pointer1">Postcode / ZIP (optional):</span>
+				<input type="text" class="inputtypered" style="width: 72%;margin: 10px 0px 0px 160px;">
+			</div>
+
+
+
+							<!-- 	Right Side Div Start ( Phone number  To  Order notes )   -->
+
+
+
+			<div style="height:480px;width: 50%;background-color: transparent;float: left;">
+				<p style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 5px;" class="pointer1">Phone No:*</p> 
+				<input type="number" class="inputtypered" style="width: 76%;margin: 5px 0px 0px 5px;float: left;">
+
+				<br><br><br>
+
+				<p style="font-family: 'Open Sans', sans-serif;margin: 10px 0px 0px 5px;float: left;" class="pointer1">Email Address:*</p> 		<br><br>
+				<input type="email" class="inputtypered" style="width: 76%;margin: 5px 0px 0px 5px;float: left;">	
+
+				<br><br><br>		
+
+				<input type="checkbox" style="margin: 20px 0px 0px 5px;float: left;">	
+				<p style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 15px;float: left;" class="pointer1">Ship to a different address?</p>  <br><br><br>
+				<p style="font-family: 'Open Sans', sans-serif;margin: -5px 0px 0px 5px;float: left;" class="pointer1">Order Notes (optional):</p>		<br>
+
+				<textarea placeholder="Notes about your order,e.g. special notes for delivery" style="height:150px;width:76%;margin: 10px 0px 0px 5px;"></textarea>
+				
+			</div>
+		</div>
+
+
+												<!-- 	Order	 -->
+
+
+		<p class="fontsize21 mt25 ml160"  style="font-family: 'Roboto', sans-serif;">Order</p>
+			<hr class="width78 mt0 ml160">
+
+
+											<!--   	Table Start		 -->
+
+
+
+	<div style="height:255px;width:100%;background-color:transparent;margin: 30px 0px 0px 0px">
+		<div style="height:255px;width: 1175px;border: 1px solid black;background-color: transparent;
+				margin: 0px 0px 0px 160px;">
+			<div style="height:255px;width:350px;border: 1px solid black;background-color:transparent;float: left;">
+				<div style="height:50px;width:350px;border: 1px solid black;background-color:#f1f1f1;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							<b>Product</b></p>
+				</div>
+				<div style="height:50px;width:350px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<span style="font-family: 'Open Sans', sans-serif;font-size:17px;
+						margin:15px 0px 0px 25px;float: left;">
+								Wall Color</span>
+						<span style="font-size: 17px;margin: 20px 0px 0px 5px;float: left;"> * 1</span>
+				</div>
+				<div style="height:50px;width:350px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							<b>Subtotal</b></p>
+				</div>
+				<div style="height:50px;width:350px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							<b>Shipping</b></p>
+				</div>
+				<div style="height:52px;width:350px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							<b>Total</b></p>
+				</div>
+			</div>	
+
+
+			<div style="height:255px;width:820px;border: 1px solid black;background-color:transparent;float: left;">
+				<div style="height:50px;width:822px;border: 1px solid black;background-color:#f1f1f1;
+					margin: -1px 0px 0px -1px;float: left;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:13px 0px 0px 25px">
+							<b>Total</b></p>
+				</div>
+				<div style="height:50px;width:822px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							$329.00</p>
+				</div>
+				<div style="height:50px;width:822px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							$329.00</p>
+				</div>
+				<div style="height:50px;width:822px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+								Enter your address to view shipping options.</p>
+				</div>
+				<div style="height:52px;width:822px;border: 1px solid black;background-color:white;float: left;
+					margin: -1px 0px 0px -1px;">
+						<p style="font-family: 'Open Sans', sans-serif;font-size:17px;margin:15px 0px 0px 25px">
+							<b>$329.00</b></p>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+												<!-- 	 Table End 	 	-->
+
+
+		<p style="font-family: 'Open Sans', sans-serif;font-size:16px;margin:20px 0px 0px 160px">
+								Your personal data will be used to process your order, support your experience throughout this website, and for other purposes described in our privacy policy.</p>
+
+
+		<button style="width: 180px;color: white;border: none;border-radius: 5px;margin: 20px 0px 0px 160px;" 
+				class="clickred1 height50 ">Proceed to checkout</button>
+
+
+
+											<!-- 		footer 			-->
+
+
+
+	<div style="height:850px;width:100%;background-image: url(img/footerbg.png);background-size: cover;background-position: center;background-attachment: fixed;margin: 20px 0px 0px 0px;">
+		<div class="shadow2">
+			<div style="height: 100px;width: 100%;background-color: transparent;">
+				<p class="fontsize22 textclrwhite float" style="font-family: 'Roboto', sans-serif;margin: 40px 0px 0px 650px;"><b>Find Us On Instagram</b></p>
+				<hr style="width: 14%;margin: 15px 0px 0px 650px;float: left;">
+			</div>
+
+			<div style="height: 200px;width: 100%;background-color: transparent;">
+				<img src="img/footer2.jpg" style="height:200px;width:195px;margin: 0px 0px 0px 160px;float: left;cursor: pointer;">
+				<img src="img/footer1.jpg" style="height:200px;width:195px;margin: 0px 0px 0px 0px;float: left;cursor: pointer;">
+				<img src="img/footer3.jpg" style="height:200px;width:200px;margin: 0px 0px 0px 0px;float: left;cursor: pointer;">
+				<img src="img/footer4.jpg" style="height:200px;width:200px;margin: 0px 0px 0px 0px;float: left;cursor: pointer;">
+				<img src="img/footer2.jpg" style="height:200px;width:195px;margin: 0px 0px 0px 0px;float: left;cursor: pointer;">
+				<img src="img/footer3.jpg" style="height:200px;width:195px;margin: 0px 0px 0px 0px;float: left;cursor: pointer;">
+			</div>
+
+			<div style="height: 370px;width: 100%;background-color: transparent;">
+				<div style="height: 370px;width: 37%;background-color: transparent;float: left;">
+					<p class="fontsize22 textclrwhite float" style="font-family: 'Roboto', sans-serif;margin: 80px 0px 0px 160px;"><b>NewMag</b></p>
+					<hr style="width: 65%;margin: 125px 0px 0px 160px;">
+
+					<p class="fontsize15 textclrwhite" style="font-family: 'Open Sans', sans-serif;margin: 20px 0px 0px 160px;">amet, consetetur sadipscing elitr, sed diam nonumy <br>eirmod tempor invidunt ut labore et dolore magna <br>aliquyam erat.</p>
+
+					<i class="fa fa-facebook mt30 ml170 textclrwhite fontsize16 pointer clickred" aria-hidden="true"></i>
+					<i class="fa fa-twitter ml10 mt10 textclrwhite fontsize16 pointer clickred" aria-hidden="true"></i>
+					<i class="fa fa-instagram ml10 mt10 textclrwhite fontsize16 pointer clickred" aria-hidden="true"></i>
+				</div>
+				<div style="height: 370px;width: 14%;background-color: transparent;float: left;">
+					<p class="fontsize22 textclrwhite" style="font-family: 'Roboto', sans-serif;margin: 80px 0px 0px 10px;">Categories</p>
+					<hr style="width: 85%;margin: 19px 0px 0px 10px;">
+
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 20px 0px 0px 10px;cursor: pointer;">Entertainment</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">Sports</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">Politics</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">National</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">Blog</p>
+				</div>
+				<div style="height: 370px;width: 13%;background-color: transparent;float: left;">
+					<p class="fontsize22 textclrwhite" style="font-family: 'Roboto', sans-serif;margin: 80px 0px 0px 10px;">Popular Tags</p>
+					<hr style="width: 85%;margin: 19px 0px 0px 10px;">
+
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 20px 0px 0px 10px;cursor: pointer;">Entertainment</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">Sports</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">Politics</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">National</p>
+					<p class="fontsize15 textclrwhite mt0 ml0 pointer" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;cursor: pointer;">International</p>
+				</div>
+				<div style="height: 370px;width: 36%;background-color: transparent;float: left;">
+					<p class="fontsize22 textclrwhite" style="font-family: 'Roboto', sans-serif;margin: 80px 0px 0px 10px;">News Latter</p>
+					<hr style="width: 70%;margin: 19px 0px 0px 10px;">
+
+					<p class="fontsize15 textclrwhite mt0 ml0" style="font-family: 'Open Sans', sans-serif;margin: 20px 0px 0px 10px;">Don't Miss Anythink</p>
+					<p class="fontsize15 textclrwhite mt0 ml0" style="font-family: 'Open Sans', sans-serif;margin: 15px 0px 0px 10px;">Subscribe to our #newsletter</p>
+
+					<input type="email" placeholder="Enter Email" style="height: 33px;width: 60%;border: none;border-radius: 5px;margin: 15px 0px 0px 10px;">
+					<button style="height: 35px;width:50px;background-color: red;border: none;cursor: pointer;margin: 0px 0px 0px -10px;"><i class="fa fa-paper-plane textclrwhite pointer" aria-hidden="true"></i></button>
+				</div>
+			</div>
+
+			<div style="height: 180px;width: 100%;background-color: transparent;">
+				<hr style="width: 30%;margin: 50px 0px 0px 520px;float: left;">
+				<span class="fontsize16 textclrwhite float" style="font-family: 'Open Sans', sans-serif;margin: 25px 0px 0px 580px;">Copyright © 2023</span>
+				<span class="fontsize16 textclrwhite float pointer" style="font-family: 'Open Sans', sans-serif;margin: 25px 0px 0px 5px;"><a href="https://hitechskillindia.in/" style="color:red">Hi-Tech</a></span>
+				<span class="fontsize16 textclrwhite float" style="font-family: 'Open Sans', sans-serif;margin: 25px 0px 0px 5px;">-All Rights reserved</span>
+				<hr style="width: 30%;margin: 30px 0px 0px 520px;float: left;">
+			</div>
+		</div>
+	</div>
+
+
+</form>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

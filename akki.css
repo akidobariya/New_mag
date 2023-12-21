@@ -1,0 +1,1553 @@
+
+/* a tag universal 	*/
+a{
+	text-decoration: none;
+}
+
+
+
+/* Center the loader */
+
+#loader {
+  background-color: black;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+}
+.center-body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	/****** center box
+	width: 300px;
+	height: 300px;
+	border: solid 1px #aaa;
+	******/
+}
+
+.loader-circle-29 {
+	height: 70px;
+	width: 70px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #f00, #ff8000, #ffd500, #ff0, #d4ff00, #00ff2b, #0f5, #0fa, #0ff, #00d4ff, #007fff, #2a00ff, #f0a, #f00);
+	animation: animateme-3 1s alternate ease-in-out infinite;
+	display: inline-block;
+	border: dashed 5px #202628;
+}
+.loader-circle-29:before {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	background-color: #202628;
+	z-index: 1;
+}
+@keyframes animateme-3 {
+	from {
+		transform: rotate(0deg) scale(0.5);
+	}
+	to {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+
+
+
+
+
+
+
+.divhw{
+	height: 85px;
+	float: left;
+}
+.float{
+	float: left;
+}
+
+.div50{
+	width: 50%;
+}
+
+
+.blackheader{
+	 height: 35px;
+	 width: 100%;
+	 background-color: #333;
+}
+.subheader{
+	 height: 30px;
+	 width: 50%;
+	 background-color: transparent;
+	 float: left;
+}
+
+
+									/*		Cursor Pointer		*/
+
+.pointer{
+	cursor: pointer;
+}
+.pointer1{
+	cursor: context-menu;
+}
+
+
+
+
+							/*			Click On taxt color red			*/
+
+
+.clickred{
+	color: #444444;
+	transition: 1s;
+}
+.clickred:hover{
+	color: red;
+	transition: 1s;
+}
+
+.clickred1{
+	height: 50px;
+	width: 80px;
+	color: white;
+	background-color: #f75656;
+	border: none;
+	border-radius: 5px;
+	margin: 20px 0px 0px 160px;
+	transition: 1s;
+}
+.clickred1:hover{
+	background-color: darkred;	
+	color: white;
+	border: none;
+	transition: 1s;
+}
+
+.inputtypered{
+	height: 40px;
+	width: 75%;
+	border: 1px solid black;
+	outline-color: red;
+}
+.inputtypered:focus{
+	box-shadow: 0px 0px 5px black;
+}
+
+.clickall{
+	background-color: red;
+	background-color: blue;
+	background-color: green;
+	color: white;
+	transition: 1s;
+}
+.clickall:hover{
+	background-color: black;
+	color: white;
+	transition: 1s;
+}
+
+.clickredbutton{
+	color: red;
+	background-color: white;
+	transition: 1s;
+}
+.clickredbutton:hover{
+	color: white;
+	background-color: red;
+	transition: 1s;
+}
+
+
+.clickblackbox{
+	color: black;
+	background-color: white;
+	transition: 1s;
+}
+.clickblackbox:hover{
+	color: white;
+	background-color: black;
+	transition: 1s;
+}
+
+/*	Detail Page		*/
+
+.violatebutton{
+	color: white;
+	background-color: #1c3a78;
+	transition: 1s;
+}
+.violatebutton:hover{
+	color: white;
+	background-color: black;
+	transition: 1s;
+}
+
+.bluebutton{
+	color: white;
+	background-color: #006dbf;
+	transition: 1s;
+}
+.bluebutton:hover{
+	color: white;
+	background-color: black;
+	transition: 1s;
+}
+
+.blackbutton{
+	color: #444444;
+	background-color: white;
+	transition: 1s;
+}
+.blackbutton:hover{
+	color: black;
+	background-color: white;
+	transition: 1s;
+}
+
+
+
+					/*		 All Buttons- (Height/ width/ color/ background-color/border)	*/
+
+								/*		3 color ( blue , red , green )			*/
+
+.buttonclrblue1{
+	height: 31px;
+	width: 60px;
+	color: white;
+	background-color: #3d9ddf;
+	cursor: pointer;
+	border: none;
+}
+.buttonclrblue2{
+	height: 31px;
+	width: 120px;
+	color: white;
+	background-color: #3d9ddf;
+	cursor: pointer;
+	border: none;
+}
+
+
+.buttonclrred1{
+	height: 31px;
+	width: 70px;
+	color: white;
+	background-color: #e36493;
+	cursor: pointer;
+	border: none;
+}
+.buttonclrred2{
+	height: 31px;
+	width: 60px;
+	color: white;
+	background-color: #e36493;
+	cursor: pointer;
+	border: none;
+}
+.buttonclrred3{
+	height: 31px;
+	width: 75px;
+	color: white;
+	background-color: #e36493;
+	cursor: pointer;
+	border: none;
+}
+
+
+.buttonclrgreen1{
+	height: 31px;
+	width: 70px;
+	color: white;
+	background-color: #69b74f;
+	cursor: pointer;
+	border: none;
+}
+.buttonclrgreen2{
+	height: 31px;
+	width: 70px;
+	color: white;
+	background-color: #69b74f;
+	cursor: pointer;
+	border: none;
+}
+.buttonclrgreen3{
+	height: 31px;
+	width: 90px;
+	color: white;
+	background-color: #69b74f;
+	cursor: pointer;
+	border: none;
+}
+
+
+								/*		Text color ( white/red/black)		*/
+
+
+
+.textclrwhite{
+	color: white;
+}
+.textclrred{
+	color: red;
+}
+.textclrblack{
+	color:black;
+}
+
+								/*		Font-Size ( 10px to 30px )		*/
+.fontsize5{
+	font-size: 5px;
+}
+.fontsize6{
+	font-size: 6px;
+}
+.fontsize7{
+	font-size: 7px;
+}
+.fontsize8{
+	font-size: 8px;
+}
+.fontsize9{
+	font-size: 9px;
+}
+.fontsize10{
+	font-size: 10px;
+}
+.fontsize11{
+	font-size: 11px;
+}
+.fontsize12{
+	font-size: 12px;
+}
+.fontsize13{
+	font-size: 13px;
+}
+.fontsize14{
+	font-size: 14px;
+}
+.fontsize15{
+	font-size: 15px;
+}
+.fontsize16{
+	font-size: 16px;
+}
+.fontsize17{
+	font-size: 17px;
+}
+.fontsize18{
+	font-size: 18px;
+}
+.fontsize19{
+	font-size: 19px;
+}
+.fontsize20{
+	font-size: 20px;
+}
+.fontsize21{
+	font-size: 22px;
+}
+.fontsize22{
+	font-size: 22px;
+}
+.fontsize23{
+	font-size: 23px;
+}
+.fontsize24{
+	font-size: 24px;
+}
+.fontsize25{
+	font-size: 25px;
+}
+.fontsize26{
+	font-size: 26px;
+}
+.fontsize27{
+	font-size: 27px;
+}
+.fontsize28{
+	font-size: 28px;
+}
+.fontsize29{
+	font-size: 29px;
+}
+.fontsize30{
+	font-size: 30px;
+}
+.fontsize43{
+	font-size: 43px;
+}
+
+
+							/*			Box Background Color			*/
+
+.blue{
+	height: 100%;
+	width: 100%;
+	float: left;
+	transition: 5s;
+}
+.blue:hover{
+	background-color: #337ab79c;
+}
+
+
+
+										/* BOX START */
+
+.box0{
+	height: 720px;
+	width: 100%;
+	background-color: red;
+}
+.box1{
+	height: 600px;
+	width: 60%;
+	float: left;
+	background-color: transparent;
+}
+.box2{
+	height: 300px;
+	width: 40%;
+	float: left;
+	background-color: transparent;
+}
+.box3{
+	height: 420px;
+	width: 100%;
+	background-color: transparent;
+}
+.box4{
+	height: 150px;
+	width: 100%;
+	background-color: transparent;
+}
+.box5{
+	height: 420px;
+	width: 50%;
+	background-color: transparent;
+	float: left;
+}
+.box6{
+	height: 420px;
+	width: 25%;
+	background-color: transparent;
+	float: left;
+}
+.box7{
+	height: 420px;
+	width: 25%;
+	background-color: transparent;
+	float: left;
+}
+.box8{
+	height: 190px;
+	width: 100%;
+	background-color: #0000007a;
+	margin: 230px 0px 0px 0px;
+}
+.box9{
+	height: 220px;
+	width: 100%;
+	background-color: transparent;
+}
+.box10{
+	height: 450px;
+	width: 100%;
+	background-color: transparent;
+}
+
+
+								/*			Box-Shadow			*/
+
+.shadow{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(#cb282800, #000000e3);
+	float: left;
+}
+.shadow1{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(#00000080, #00000080);
+	float: left;
+}
+.shadow2{
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(#000000ba , #000000ba);
+	float: left;
+}
+.blackshadow{
+	border: none;
+	transition: .5s;
+}
+.blackshadow:hover{
+	box-shadow: 0px 0px 10px silver;
+	transition: .5s;
+}
+
+
+										/*		Background-Images		*/
+
+/*	Index.html	*/
+
+.backgroundimage1{
+	background-image: url(img/slider/slider1.jpg);
+	background-size: 150% 100%;
+	background-position: center;
+	cursor: grab;
+}
+.backgroundimage2{
+	background-image: url(img/slider/slider2.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	cursor: grab;
+}
+.backgroundimage3{
+	background-image: url(img/slider/slider3.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+	cursor: grab;
+}
+
+.backgroundimage4{
+	background-image: url(img/trending3.jpg);
+	height: 420px;width: 580px;
+	margin: 0px 0px 0px 160px;
+	background-size: 110% 110%;
+	background-position: center;
+	transition: 5s;
+}
+.backgroundimage4:hover{
+	background-size: 100% 100%;
+	transition: 5s;
+}
+
+.backgroundimage5{
+	background-image: url(img/mostviewed3.jpg);
+	height: 420px;width: 280px;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+.backgroundimage6{
+	background-image: url(img/mostviewed1.jpg);
+	height: 420px;width: 280px;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+.backgroundimage7{
+	background-image: url(img/pd1.jpg);
+	height: 120px;width: 1000px;
+	background-size: 100% 100%;
+	margin: 50px 0px 0px 250px;
+	background-position: right;
+}
+.backgroundimage8{
+	background-image: url(img/trending1.jpg);
+	height: 420px;width: 580px;
+	background-size: 110% 110%;
+	background-position: center;
+	margin: 0px 0px 0px 160px;
+	float: left;
+	transition: 5s;
+}
+.backgroundimage8:hover{
+	background-image: url(img/trending1.jpg);
+	background-size: 100% 100%;
+	transition: 5s;
+}
+
+
+.backgroundimage9{
+	background-image: url(img/trending2.jpg);
+	height: 420px;width: 580px;
+	background-size: 110% 110%;
+	background-position: center;
+	margin: 0px 0px 0px 20px;
+	float: left;
+	transition: 5s;
+}
+.backgroundimage9:hover{
+	background-image: url(img/trending2.jpg);
+	background-color: #716fb2d9;
+	background-size: 100% 100%;
+	transition: 5s;
+}
+
+.backgroundimage10{
+	background-image: url(img/mostviewed2.jpg);
+	height: 420px;width: 280px;
+	background-size: cover ;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+.backgroundimage11{
+	background-image: url(img/mostviewed4.jpg);
+	height: 420px;width: 280px;
+	background-size: cover ;
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+.backgroundimage12{
+	background-image: url(img/fashion2.jpg);
+	height: 335px;width: 285px;
+	background-size: cover ;
+	margin: 0px 0px 0px 160px;
+	float: left;
+}
+.backgroundimage13{
+	background-image: url(img/fashion1.jpg);
+	height: 220px;width: 285px;
+	background-size: cover ;
+	margin: 5px 0px 0px 160px;
+	float: left;
+}
+.backgroundimage14{
+	background-image: url(img/fashion4.jpg);
+	height: 215px;width: 285px;
+	background-size: cover ;
+	margin: 0px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage15{
+	background-image: url(img/fashion3.jpg);
+	height: 340px;width: 285px;
+	background-size: cover ;
+	margin: 5px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage16{
+	background-image: url(img/fashion5.jpg);
+	height: 560px;width: 595px;
+	background-size: cover ;
+	margin: 0px 0px 0px 0px;
+	float: left;
+}
+.backgroundimage17{
+	background-image: url(img/gallery1.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 50px 0px 0px 160px;
+	float: left;
+}
+.backgroundimage18{
+	background-image: url(img/gallery2.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 50px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage19{
+	background-image: url(img/gallery3.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 50px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage20{
+	background-image: url(img/gallery4.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 0px 0px 0px 160px;
+	float: left;
+}
+.backgroundimage21{
+	background-image: url(img/gallery5.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 0px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage22{
+	background-image: url(img/gallery6.jpg);
+	height: 260px;width: 390px;
+	background-size: cover ;
+	margin: 0px 0px 0px 5px;
+	float: left;
+}
+.backgroundimage24{
+	background-image: url(img/pd2.jpg);
+	height: 180px; width: 81%;
+	background-size: cover;
+	margin: 20px 0px 0px 160px;
+	float: left;
+}
+
+
+
+/*		Blog.html All Inline Background-Images		*/
+
+
+
+		/*		Shoplist.html 		*/
+
+/* Image 1 */
+.box11{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box12{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list1.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box12:hover{
+			background-image:url('img/list1.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box11:hover .box12{background-image: url(img/list1.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 2 */
+.box13{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box14{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list2.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box14:hover{
+			background-image:url('img/list2.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box13:hover .box14{background-image: url(img/list2.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 3 */
+.box15{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box16{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list3.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box16:hover{
+			background-image:url('img/list3.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box15:hover .box16{background-image: url(img/list3.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 4 */
+.box17{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box18{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list4.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box18:hover{
+			background-image:url('img/list4.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box17:hover .box18{background-image: url(img/list4.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 5 */
+.box19{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box20{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list5.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box20:hover{
+			background-image:url('img/list5.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box19:hover .box20{background-image: url(img/list5.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 6 */
+.box21{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box22{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list6.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box22:hover{
+			background-image:url('img/list6.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box21:hover .box22{background-image: url(img/list6.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 7 */
+.box23{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box24{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list7.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box24:hover{
+			background-image:url('img/list7.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box23:hover .box24{background-image: url(img/list7.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+/* Image 5 */
+.box25{
+	height: 380px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+.up{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+	overflow: hidden;
+}
+		.box26{
+			height: 190px;
+			width: 280px;
+			background-color: transparent;
+			background-image:url('img/list8.jpg');
+			background-size: cover;
+			transition: 1s;
+		}
+		.box26:hover{
+			background-image:url('img/list8.jpg');
+			height: 105%;width: 105%;
+			background-size: cover;
+			transform: rotate(15deg) scale(1.4);
+			transition: 1s;
+		}
+.down{
+	height: 190px;
+	width: 280px;
+	background-color: white;
+}
+		.box25:hover .box26{background-image: url(img/list8.jpg);
+			background-size: cover;
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+			transform: rotate(15deg) scale(1.4);
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.backgroundimage23{
+	background-image: url(img/list1.jpg);
+	height: 200px;width: 280px;
+	background-size: cover;
+	transition: 1s;
+	overflow: hidden;
+}
+.backgroundimage23:hover{
+	background-image: url(img/list1.jpg);
+	height: 200px;width: 280px;
+	background-size: cover;
+	transition: 1s;
+	transform: rotate(15deg) scale(1.5);
+}
+
+
+
+
+										/*  Height 10px to 250px  */
+
+
+.height10{
+	height: 10px;
+}
+.height20{
+	height: 20px;
+}
+.height30{
+	height: 30px;
+}
+.height40{
+	height: 40px;
+}
+.height50{
+	height: 50px;
+}
+.height60{
+	height: 60px;
+}
+.height70{
+	height: 70px;
+}
+.height80{
+	height: 80px;
+}
+.height90{
+	height: 90px;
+}
+.height100{
+	height: 100px;
+}
+.height110{
+	height: 110px;
+}
+.height120{
+	height: 120px;
+}
+.height130{
+	height: 130px;
+}
+.height140{
+	height: 140px;
+}
+.height150{
+	height: 150px;
+}
+.height160{
+	height: 160px;
+}
+.height170{
+	height: 170px;
+}
+.height180{
+	height: 180px;
+}
+.height190{
+	height: 190px;
+}
+.height200{
+	height: 200px;
+}
+.height210{
+	height: 210px;
+}
+.height220{
+	height: 220px;
+}
+.height230{
+	height: 230px;
+}
+.height240{
+	height: 240px;
+}
+.height250{
+	height: 250px;
+}
+.height380{
+	height: 380px;
+}
+
+/* Width 10% to 100% */
+
+.width10{
+	width: 10%;
+}
+.width15{
+	width: 15%;
+}
+.width20{
+	width: 20%;
+}
+.width25{
+	width: 25%;
+}
+.width30{
+	width: 30%;
+}
+.width40{
+	width: 40%;
+}
+.width50{
+	width: 50%;
+}
+.width60{
+	width: 60%;
+}
+.width70{
+	width: 70%;
+}
+.width75{
+	width: 75%;
+}
+.width78{
+	width: 78%;
+}
+.width80{
+	width: 80%;
+}
+.width85{
+	width: 85%;
+}
+.width90{
+	width: 90%;
+}
+.width100{
+	width: 100%;
+}
+.width280{
+	width: 280px;
+}
+
+
+
+											/* Margin  TOP   10 - 100 */
+
+.mt-15{
+	margin-top: -15px;
+}
+.mt-5{
+	margin-top: -5px;
+}
+.mt-10{
+	margin-top: -10px;
+}
+.mt0{
+	margin-top: 0px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mt25{
+	margin-top: 25px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt40{
+	margin-top: 40px;
+}
+.mt50{
+	margin-top: 50px;
+}
+.mt60{
+	margin-top: 60px;
+}
+.mt70{
+	margin-top: 70px;
+}
+.mt80{
+	margin-top: 80px;
+}
+.mt90{
+	margin-top: 90px;
+}
+.mt100{
+	margin-top: 100px;
+}
+.mt110{
+	margin-top: 110px;
+}
+.mt120{
+	margin-top: 120px;
+}
+.mt130{
+	margin-top: 130px;
+}
+.mt140{
+	margin-top: 140px;
+}
+.mt150{
+	margin-top: 150px;
+}
+.mt160{
+	margin-top: 160px;
+}
+.mt170{
+	margin-top: 170px;
+}
+.mt180{
+	margin-top: 180px;
+}
+.mt190{
+	margin-top: 190px;
+}
+.mt200{
+	margin-top: 200px;
+}
+.mt210{
+	margin-top: 210px;
+}
+.mt220{
+	margin-top: 220px;
+}
+.mt230{
+	margin-top: 230px;
+}
+.mt240{
+	margin-top: 240px;
+}
+.mt250{
+	margin-top: 250px;
+}
+.mt260{
+	margin-top: 260px;
+}
+.mt270{
+	margin-top: 270px;
+}
+.mt280{
+	margin-top: 280px;
+}
+.mt290{
+	margin-top: 290px;
+}
+.mt300{
+	margin-top: 300px;
+}
+.mt310{
+	margin-top: 310px;
+}
+.mt320{
+	margin-top: 320px;
+}
+.mt330{
+	margin-top: 330px;
+}
+.mt340{
+	margin-top: 340px;
+}
+.mt350{
+	margin-top: 350px;
+}
+.mt360{
+	margin-top: 260px;
+}
+.mt370{
+	margin-top: 370px;
+}
+.mt380{
+	margin-top: 380px;
+}
+.mt390{
+	margin-top: 390px;
+}
+.mt400{
+	margin-top: 400px;
+}
+.mt410{
+	margin-top: 410px;
+}
+.mt420{
+	margin-top: 420px;
+}
+.mt430{
+	margin-top: 430px;
+}
+.mt440{
+	margin-top: 440px;
+}
+.mt450{
+	margin-top: 450px;
+}
+.mt480{
+	margin-top: 480px;
+}
+.mt490{
+	margin-top: 490px;
+}
+.mt500{
+	margin-top: 500px;
+}
+
+
+									/*	Margin  LEFT   10 - 100*/
+
+.ml-10{
+	margin-left: -10px;
+}
+.ml-5{
+	margin-left: -5px;
+}											
+.ml0{
+	margin-left: 0px;
+}
+.ml5{
+	margin-left: 5px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.ml15{
+	margin-left: 15px;
+}
+.ml20{
+	margin-left: 20px;
+}
+.ml25{
+	margin-left: 25px;
+}
+.ml30{
+	margin-left: 30px;
+}
+.ml35{
+	margin-left: 35px;
+}
+.ml40{
+	margin-left: 40px;
+}
+.ml45{
+	margin-left: 45px;
+}
+.ml50{
+	margin-left: 50px;
+}
+.ml55{
+	margin-left: 55px;
+}
+.ml60{
+	margin-left: 60px;
+}
+.ml65{
+	margin-left: 65px;
+}
+.ml70{
+	margin-left: 70px;
+}
+.ml75{
+	margin-left: 75px;
+}
+.ml80{
+	margin-left: 80px;
+}
+.ml90{
+	margin-left: 90px;
+}
+.ml95{
+	margin-left: 95px;
+}
+.ml100{
+	margin-left: 100px;
+}
+.ml110{
+	margin-left: 110px;
+}
+.ml120{
+	margin-left: 120px;
+}
+.ml130{
+	margin-left: 130px;
+}
+.ml140{
+	margin-left: 140px;
+}
+.ml150{
+	margin-left: 150px;
+}
+.ml160{
+	margin-left: 160px;
+}
+.ml165{
+	margin-left: 165px;
+}
+.ml170{
+	margin-left: 170px;
+}
+.ml180{
+	margin-left: 180px;
+}
+.ml190{
+	margin-left: 190px;
+}
+.ml200{
+	margin-left: 200px;
+}
+.ml210{
+	margin-left: 210px;
+}
+.ml220{
+	margin-left: 220px;
+}
+.ml230{
+	margin-left: 230px;
+}
+.ml240{
+	margin-left: 240px;
+}
+.ml250{
+	margin-left: 250px;
+}
+.ml320{
+	margin-left: 320px;
+}
+.ml325{
+	margin-left: 325px;
+}
+.ml380{
+	margin-left: 380px;
+}
+.ml400{
+	margin-left: 400px;
+}
+.ml780{
+	margin-left: 780px;
+}
+
+									/*		Background-color		*/
+
+.bgw{
+	background-color: white;
+}
+.bgt{
+	background-color: transparent;
+}
+.bgr{
+	background-color: red;
+}
+.bgg{
+	background-color: green;
+}
+.bgb{
+	background-color: black;
+}
+
+
+
+.bx100{
+	height: 100px;
+	width: 100px;
+}
